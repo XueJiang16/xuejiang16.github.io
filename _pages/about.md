@@ -33,7 +33,7 @@ Please feel free to [email me](mailto:csxjiang@comp.hkbu.edu.hk) for research, c
   <li>
     <div class="pub-meta"><span class="pub-venue">TPAMI 2026</span></div>
     <div class="pub-title">Feature Map Matters in Out-of-Distribution Detection <a class="pub-pdf" href="https://openreview.net/pdf?id=ZrY38sUYWs" target="_blank" rel="noopener">[PDF]</a></div>
-    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng</div>
+    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng, B. Han</div>
     <div class="pub-venue-full">IEEE Transactions on Pattern Analysis and Machine Intelligence</div>
   </li>
   <li>
