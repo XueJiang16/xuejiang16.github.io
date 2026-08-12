@@ -27,7 +27,7 @@ Please feel free to [email me](mailto:csxjiang@comp.hkbu.edu.hk) for research, c
 
 # Selected Publications
 
-<p class="pub-note">First-author papers (including equal contribution) are listed first, then others by time. <sup>*</sup> indicates equal contribution; full list can refer to <a href="https://scholar.google.com/citations?user=ajVvHgwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+<p class="pub-note"> <sup>*</sup> indicates equal contribution; full list can refer to <a href="https://scholar.google.com/citations?user=ajVvHgwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
 <ul class="pub-list">
   <li>
