@@ -27,7 +27,7 @@ Please feel free to [email me](mailto:csxjiang@comp.hkbu.edu.hk) for research, c
 
 # Selected Publications
 
-<p class="pub-note"><sup>*</sup> indicates equal contribution; full list can refer to <a href="https://scholar.google.com/citations?user=ajVvHgwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+<p class="pub-note">First-author papers (including equal contribution) are listed first, then others by time. <sup>*</sup> indicates equal contribution; full list can refer to <a href="https://scholar.google.com/citations?user=ajVvHgwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
 <ul class="pub-list">
   <li>
@@ -49,6 +49,18 @@ Please feel free to [email me](mailto:csxjiang@comp.hkbu.edu.hk) for research, c
     <div class="pub-venue-full">International Conference on Machine Learning</div>
   </li>
   <li>
+    <div class="pub-meta"><span class="pub-venue">ICLR 2024</span><span class="pub-tag">Spotlight</span></div>
+    <div class="pub-title">Negative Label Guided OOD Detection with Pretrained Vision-Language Models <a class="pub-pdf" href="https://arxiv.org/pdf/2403.20078" target="_blank" rel="noopener">[PDF]</a></div>
+    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng, B. Han</div>
+    <div class="pub-venue-full">International Conference on Learning Representations</div>
+  </li>
+  <li>
+    <div class="pub-meta"><span class="pub-venue">ICML 2023</span></div>
+    <div class="pub-title">Detecting Out-of-Distribution Data through In-Distribution Class Prior <a class="pub-pdf" href="https://proceedings.mlr.press/v202/jiang23e/jiang23e.pdf" target="_blank" rel="noopener">[PDF]</a></div>
+    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng, B. Han</div>
+    <div class="pub-venue-full">International Conference on Machine Learning</div>
+  </li>
+  <li>
     <div class="pub-meta"><span class="pub-venue">IJCV 2026</span></div>
     <div class="pub-title">REVERIE+: Generalized Reflective Instruction Tuning for Hallucination Mitigation in Advanced VLMs <a class="pub-pdf" href="https://rdcu.be/fxjy6" target="_blank" rel="noopener">[PDF]</a></div>
     <div class="pub-authors">M. Bi, J. Zhang, X. Wang, <strong>X. Jiang</strong>, Y. Lu, P. Wang, F. Zheng</div>
@@ -61,22 +73,10 @@ Please feel free to [email me](mailto:csxjiang@comp.hkbu.edu.hk) for research, c
     <div class="pub-venue-full">International Conference on Machine Learning</div>
   </li>
   <li>
-    <div class="pub-meta"><span class="pub-venue">ICLR 2024</span><span class="pub-tag">Spotlight</span></div>
-    <div class="pub-title">Negative Label Guided OOD Detection with Pretrained Vision-Language Models <a class="pub-pdf" href="https://arxiv.org/pdf/2403.20078" target="_blank" rel="noopener">[PDF]</a></div>
-    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng, B. Han</div>
-    <div class="pub-venue-full">International Conference on Learning Representations</div>
-  </li>
-  <li>
     <div class="pub-meta"><span class="pub-venue">AAAI 2023</span></div>
     <div class="pub-title">On the Stability and Generalization of Triplet Learning <a class="pub-pdf" href="https://arxiv.org/pdf/2302.09815" target="_blank" rel="noopener">[PDF]</a></div>
     <div class="pub-authors">J. Chen, H. Chen, <strong>X. Jiang</strong>, B. Gu, W. Li, T. Gong, F. Zheng</div>
     <div class="pub-venue-full">Proceedings of the AAAI Conference on Artificial Intelligence</div>
-  </li>
-  <li>
-    <div class="pub-meta"><span class="pub-venue">ICML 2023</span></div>
-    <div class="pub-title">Detecting Out-of-Distribution Data through In-Distribution Class Prior <a class="pub-pdf" href="https://proceedings.mlr.press/v202/jiang23e/jiang23e.pdf" target="_blank" rel="noopener">[PDF]</a></div>
-    <div class="pub-authors"><strong>X. Jiang</strong>, F. Liu, Z. Fang, H. Chen, T. Liu, F. Zheng, B. Han</div>
-    <div class="pub-venue-full">International Conference on Machine Learning</div>
   </li>
   <li>
     <div class="pub-meta"><span class="pub-venue">CVPR 2022</span></div>
