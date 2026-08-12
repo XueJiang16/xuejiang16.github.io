@@ -40,70 +40,258 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-.paper-box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
-
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
-    }
-    
-    .paper-box-text{
-        max-width: 100%;
-        order: 1;
-    }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
-
-    }
-
-
-}
-
 $scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
     margin-top: -$scroll_offset;
 }
 
-.badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+/* Homepage polish */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 8% -10%, rgba(31, 58, 95, 0.08), transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, rgba(71, 119, 168, 0.08), transparent 50%),
+    linear-gradient(180deg, #f7f9fc 0%, #f4f7fb 40%, #eef3f8 100%);
+  color: $text-color;
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(31, 58, 95, 0.08);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.greedy-nav a {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+#main {
+  margin-top: 1.5em;
+}
+
+.sidebar {
+  .profile_box {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(31, 58, 95, 0.08);
+    border-radius: 18px;
+    padding: 1.25em 1em 1em;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  }
+
+  .author__avatar img {
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px rgba(31, 58, 95, 0.12), 0 10px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .author__name {
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  .author__bio {
+    color: #475569;
+    line-height: 1.45;
+  }
+
+  .author__urls a {
+    border-radius: 8px;
+    padding: 0.25em 0.35em;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: rgba(31, 58, 95, 0.08);
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.page {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(31, 58, 95, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.05);
+  padding: 1.5em 1.5em 2em;
+
+  @include breakpoint($medium) {
+    padding: 2em 2.25em 2.5em;
+  }
+}
+
+.page__content {
+  .intro-block {
+    font-size: 1.05em;
+    line-height: 1.75;
+    color: #334155;
+    margin-bottom: 0.5em;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    margin-top: 1.6em;
+    margin-bottom: 0.85em;
+    padding-bottom: 0.45em;
+    border-bottom: none;
+    color: #0f172a;
+    font-family: $serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3.25rem;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #1f3a5f, #5b87b8);
+    }
+  }
+
+  ul {
+    padding-left: 1.1em;
+
+    li {
+      margin-bottom: 0.55em;
+      line-height: 1.65;
+    }
+  }
+
+  a {
+    color: #1f3a5f;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+
+    &:hover {
+      color: #163055;
+    }
+  }
+}
+
+.pub-note {
+  margin: 0.35em 0 1em;
+  color: #64748b;
+  font-size: 0.95em;
+}
+
+.pub-list {
+  list-style: none;
+  padding-left: 0 !important;
+  margin: 0.75em 0 0;
+
+  li {
+    position: relative;
+    margin-bottom: 0.9em;
+    padding: 0.95em 1.05em 0.95em 1.15em;
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(31, 58, 95, 0.08);
+    border-radius: 12px;
+    border-left: 3px solid #5b87b8;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+    }
+
+    strong {
+      color: #0f172a;
+    }
+  }
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45em;
+  margin-bottom: 0.4em;
+}
+
+.pub-venue {
+  display: inline-block;
+  padding: 0.18em 0.55em;
+  border-radius: 6px;
+  background: #1f3a5f;
+  color: #fff;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.pub-title {
+  color: #0f172a;
+  font-size: 1.02em;
+  font-weight: 650;
+  line-height: 1.45;
+  margin-bottom: 0.28em;
+}
+
+.pub-authors {
+  color: #475569;
+  font-size: 0.92em;
+  line-height: 1.5;
+}
+
+.pub-venue-full {
+  margin-top: 0.28em;
+  color: #94a3b8;
+  font-size: 0.82em;
+  line-height: 1.4;
+}
+
+.pub-pdf {
+  margin-left: 0.3em;
+  font-weight: 700;
+  font-size: 0.88em;
+  white-space: nowrap;
+  text-decoration: none !important;
+  color: #1f3a5f !important;
+
+  &:hover {
+    color: #163055 !important;
+    text-decoration: underline !important;
+  }
+}
+
+.pub-tag {
+  display: inline-block;
+  padding: 0.14em 0.5em;
+  border-radius: 999px;
+  background: rgba(180, 83, 9, 0.12);
+  color: #9a3412;
+  font-size: 0.74em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1.15em 1em 1.6em;
+    border-radius: 14px;
+  }
+
+  .pub-list li {
+    padding: 0.75em 0.85em;
+  }
 }

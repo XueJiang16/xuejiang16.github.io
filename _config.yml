@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Xue Jiang"
-description              : "Focus on OOD Detection and Trustworthy MLLM."
+description              : "OOD detection & trustworthy MLLM."
 repository               : "XueJiang16/xuejiang16.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Xue Jiang"
   avatar           : "images/avatar.png"
-  bio              : "Joint Ph.D. student at SusTech and HKBU."
+  bio              : "Joint Ph.D. student at SusTech & HKBU"
   location         :
   employer         :
   pubmed           : 
